@@ -59,8 +59,13 @@ for(var i = 0; i < button.length; i++)
         }
         else if(value =='sign')
         {
+            if(text){
             operand2 = -1* parseFloat(text);
             display.textContent = operand2;
+            }
+            else{
+                display.textContent='0';
+            }
         }
         else if(value == '%')
         {
@@ -91,7 +96,13 @@ for(var i = 0; i < button.length; i++)
             }
         }
         else{
+            if(text==0)
+            {
+                display.textContent = '' +value;
+            }
+            else{
             display.textContent += value;
+            }
         }
     });
 }

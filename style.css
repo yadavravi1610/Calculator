@@ -45,7 +45,7 @@
     justify-content: flex-end;
 }
 
-#display-container p{
+#display-container span{
     margin: 0.5rem;
     vertical-align: text-bottom;
 }
