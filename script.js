@@ -1,4 +1,4 @@
-var button = document.querySelectorAll('button');
+var button = document.querySelectorAll('.button');
 
 var display = document.getElementById('display');
 
