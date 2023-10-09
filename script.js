@@ -3,7 +3,7 @@ var button = document.getElementsByClassName('button');
 var display = document.getElementById('display');
 
 var operand1 = 0;
-var operand2 = 0;
+var operand2 = null;
 var operator = null;
 
 function isOperator(value){
