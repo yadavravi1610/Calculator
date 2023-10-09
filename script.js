@@ -2,7 +2,7 @@ var button = document.getElementsByClassName('button');
 
 var display = document.getElementById('display');
 
-var operand1 = 0;
+var operand1 = null;
 var operand2 = null;
 var operator = null;
 
@@ -24,7 +24,7 @@ for(var i = 0; i < button.length; i++)
         }
         else if(value =='ac')
         {
-            operand1 = 0;
+            operand1 = null;
             display.textContent ='0';
         }
         else if(value =='sign')
