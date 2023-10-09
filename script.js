@@ -1,32 +1,3 @@
-// let string = "";
-
-// let buttons = document.querySelectorAll('.button');
-
-// for (let i = 0; i < buttons.length; i++) {
-//     buttons[i].addEventListener('click', function() {
-//         var value = this.getAttribute('data-value');
-//         if (value === '=') {
-//             string = eval(string);
-//             document.querySelector('#display').innerHTML = string;
-//         } else if (value === 'ac') {
-//             string = '';
-//             document.querySelector('#display').innerHTML = string;
-//         } else if (value === '%') {
-//             string = parseFloat(string) / 100;
-//             document.querySelector('#display').innerHTML = string;
-//         } else if (value === 'sign') {
-//             string = parseFloat(string) * -1;
-//             document.querySelector('#display').innerHTML = string;
-//         } else {
-//             string += value;
-//             document.querySelector('#display').innerHTML = string;
-//         }
-//     });
-// }
-
-
-
-
 var button = document.getElementsByClassName('button');
 
 var display = document.getElementById('display');
@@ -50,7 +21,6 @@ for(var i = 0; i < button.length; i++)
             operator =value;
             operand1 = parseFloat(text);
             display.textContent = '';
-            console.log(operand1);
         }
         else if(value =='ac')
         {
@@ -110,48 +80,3 @@ for(var i = 0; i < button.length; i++)
         }
     });
 }
-
-
-
-// //  second logic
-
-// let string = "";
-
-// let buttons = document.querySelectorAll('.button');
-
-// for( var i = 0; i < buttons.length ; i++)
-// {
-//     buttons[i].addEventListener('click',(e)=>{
-        
-//         // var value = this.getAttribute('data-value');
-//         if(e.target.innerHTML == '=')
-//         {
-//             string = eval(string);
-//             document.querySelector('#display').textContent = string;
-//         }
-//         else if(e.target.innerHTML == 'ac')
-//         {
-//             string = '';
-//             document.querySelector('#display').textContent = string;
-//         }
-//         else if(e.target.innerHTML == '%')
-//         {
-//             string = parseFloat(text) / 100 ;
-//             document.querySelector('#display').textContent = string;
-//         }
-//         else if(e.target.innerHTML == 'sign')
-//         {
-//             string = parseFloat(text) * -1 ;
-//             document.querySelector('#display').textContent = string;
-//         }
-//         else
-//         {
-//             string = string + e.target.innerHTML ;
-//             document.querySelector('#display').textContent = string;
-//         }
-        
-//     }
-//     )
-
-// }
-
