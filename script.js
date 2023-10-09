@@ -25,11 +25,13 @@ for(var i = 0; i < button.length; i++)
         else if(value =='ac')
         {
             operand1 = null;
+            operand2= null;
+            operator= null;
             display.textContent ='0';
         }
         else if(value =='sign')
         {
-            if(operator){
+            if(operator !== null){
                 operand2 = -1* parseFloat(text);
                 display.textContent = operand2;
             }
@@ -40,7 +42,7 @@ for(var i = 0; i < button.length; i++)
         }
         else if(value == '%')
         {
-            if(operator){
+            if(operator !== null){
                 operand2 = parseFloat(text) / 100;
                 display.textContent = operand2;
             }
