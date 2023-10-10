@@ -1,3 +1,4 @@
+"use Strict";
 var button = document.querySelectorAll('.button');
 
 var display = document.getElementById('display');
@@ -65,7 +66,7 @@ for(var i = 0; i < button.length; i++)
         else if(value == '=')
         {
             operand2 = parseFloat(text);
-            var result = eval(operand1 + operator + " "+ operand2);
+            var result = eval(operand1 + " " + operator + " "+ operand2);
                 operand1 = result;
                 display.textContent = operand1;
                 operand2 = null;
@@ -74,7 +75,7 @@ for(var i = 0; i < button.length; i++)
         else{
             if(text==0)
             {
-                display.textContent = '' +value;
+                display.textContent = value;
             }
             else{
             display.textContent += value;
